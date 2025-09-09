@@ -2,7 +2,9 @@ body{
     padding: 0;
     margin: 0;
 }
-header {
+/* Start of header // footer */
+
+header, footer {
     display: flex;
     background-color: #04CFFC;
     padding: 5px;
@@ -10,17 +12,30 @@ header {
     align-items: center;
 }
 
-header h3 {
+header h3, footer h3 {
     font-weight: lighter;
     text-align: center;
 }
 
-header ul {
+header ul, footer ul {
     list-style-type: none;
     display: flex;
     gap: 12px;
 }
-header li {
+header li, footer li {
     font-size: smaller;
     font-weight: bold;
 }
+footer {
+    background-color: #D9D9D9;
+}
+footer div {
+    display: flex;
+    gap: 0;
+}
+footer div ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/* End of header // footer */
